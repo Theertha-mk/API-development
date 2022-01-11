@@ -21,7 +21,7 @@ router.get('/users/:id', userController.user_id);
 router.post('/users', userController.user_post);
 
 // update Useritems
-router.put('/users/:id', userController.user_put);
+router.patch('/users/:id', userController.user_patch);
 
 // Delete Useritems.
 router.delete('/users/:id', userController.user_delete);

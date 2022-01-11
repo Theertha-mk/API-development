@@ -20,7 +20,7 @@ exports.user_post=async(req,res)=>{
 };
 
 // update Useritems
-exports.user_put=async (req, res) => {
+exports.user_patch=async (req, res) => {
     var users = await  User.where('id',parseInt(req.params.id)).save({...req.body},{ patch: true });
     res.json(users);  
 }
