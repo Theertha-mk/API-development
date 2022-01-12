@@ -1,6 +1,6 @@
-const bookshelf = require('../database');
+const bookshelf = require('../database')
 const User = bookshelf.model('User', {
-    tableName: 'users',
-     });
-    
-    module.exports =User;
+  tableName: 'users',
+})
+
+module.exports = User
